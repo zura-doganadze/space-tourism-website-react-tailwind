@@ -1,0 +1,6 @@
+[
+  { "content": "home", "link": "/" },
+  { "content": "destination", "link": "/destination" },
+  { "content": "crew", "link": "/crew" },
+  { "content": "technology", "link": "/technology" }
+]
