@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-bg": "url('public/home/background-home-desktop.jpg')",
+        "desktop-bg": "url('public/home/background-home-desktop.jpg')",
+        "tablet-bg": "url('public/home/background-home-tablet.jpg')",
+        "mobile-bg": "url('public/home/background-home-mobile.jpg')",
       },
       fontFamily: {
         Barlow: "Barlow condesed",
