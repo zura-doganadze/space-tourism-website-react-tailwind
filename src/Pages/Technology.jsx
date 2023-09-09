@@ -1,7 +1,9 @@
-import React from "react";
+const Technology = () => {
+  return (
+    <div>
 
-function Technology() {
-  return <div>Technology</div>;
+    </div>
+  )
 }
 
 export default Technology;

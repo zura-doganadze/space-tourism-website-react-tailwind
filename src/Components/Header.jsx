@@ -12,7 +12,7 @@ function Header() {
   return (
     <div className="absolute top-4 max-w-1360 w-full">
       <nav className="flex items-center justify-between pt-5">
-        <Link to="/home">
+        <Link to="/" className="z-10">
           <img src={logo} alt="logo" className="w-10 ml-7" />
         </Link>
         <img
