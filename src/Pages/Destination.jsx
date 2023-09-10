@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import data from "../data.json";
 
@@ -8,6 +8,8 @@ import DesktopBackgound from "../../public/destination/background-destination-de
 import moon from "../../public/destination/image-moon.png";
 
 const Destination = () => {
+  const [planets, setPlanet] = useState(data);
+
   return (
     <div className="relative md:h-screen h-full w-full">
       <img
@@ -31,7 +33,20 @@ const Destination = () => {
           Pick your destination
         </h1>
         <div className="flex flex-col md:flex-row justify-around items-center  pt-6 ">
-          <img
+          {planets.destinations.map((planet) => {
+            return (
+              <div className="   max-w-sm w-full"  >
+                <ul className="text-white pb-4">
+                  <li
+                    
+                    className="inline-block cursor-pointer md:mr-8 md:mx-0 mx-4 border-b-2 md:ml-2"
+                  >  {planet.name}</li>
+                </ul>
+                <p>{planet.description}</p>
+              </div>
+            );
+          })}
+          {/* <img
             src={moon}
             alt=""
             className="md:w-[36%] w-[52%] md:py-0 py-4 md:mx-0 mx-auto"
@@ -71,7 +86,7 @@ const Destination = () => {
                 <h3 className="text-xl text-white">3 days</h3>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
